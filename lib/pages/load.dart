@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class Loading extends StatelessWidget {
   const Loading({super.key});
@@ -12,8 +12,10 @@ class Loading extends StatelessWidget {
           image: AssetImage('assets/images/background.jpg'),
         ),
         Positioned(
-          width: 0,
-          height: 0,
+          top: 136,
+          left: 80,
+          width: 200,
+          height: 700,
           // child: Column(
           //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           //   children: [
@@ -26,7 +28,7 @@ class Loading extends StatelessWidget {
           //           Icons.access_alarms_outlined,
           //           color: Color.fromARGB(199, 192, 9, 9),
           //           size: 60,
-          //         ),
+          //         ),// 
           //         Icon(
           //           Icons.airplanemode_active,
           //           color: Color.fromARGB(198, 30, 18, 99),
@@ -102,11 +104,26 @@ class Loading extends StatelessWidget {
           //     )
           //   ],
 
-          child: Column(children: [
-            Image(
-              image: AssetImage('assets/images/appicon.png'),
-            )
-          ]),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image(
+                image: AssetImage('assets/images/appicon.png'),
+              ),
+              Text(
+                'Alerts',
+                style: TextStyle(
+                  fontSize: 50,
+                  fontFamily: 'JacquesFrancois',
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(
+                height: 150,
+              ),
+              SpinKitCubeGrid(color: Colors.white,)
+            ],
+          ),
         ),
       ],
     );
