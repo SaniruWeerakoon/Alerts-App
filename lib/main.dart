@@ -1,22 +1,20 @@
-// import 'package:alerts/pages/home.dart';
 import 'package:alerts/routes/routes.dart';
 import 'package:flutter/material.dart';
-// import 'package:alerts/pages/load.dart';
-// import 'package:alerts/pages/settings.dart';
 
-void main() {
+main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Alerts',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.purple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
         useMaterial3: true,
       ),
       routerConfig: router,
@@ -39,4 +37,13 @@ class MyApp extends StatelessWidget {
 //         // body: Loading())
 //         body: Home());
 //   }
+// }
+
+//camera?
+
+// Future<void> main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   final cameras = await availableCameras();
+//   final firstCamera = cameras.first;
+//   runApp(const MyApp());
 // }
