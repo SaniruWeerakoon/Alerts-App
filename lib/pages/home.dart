@@ -384,7 +384,7 @@ class _HomeState extends State<Home> {
                   bottom: 0, // Adjust the left position as needed
                   child: IconButton(
                     onPressed: () => {
-                      context.go('/light'),
+                      context.go('/'),
                     },
                     icon: Icon(
                       Icons.home,
