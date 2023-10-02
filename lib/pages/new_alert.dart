@@ -271,7 +271,7 @@ class NewAlertState extends State<NewAlert> {
                                         _phoneContact!.phoneNumber!.number.toString();
                                     
                                     descController.text =
-                                        "${selectedContactName!}\n${selectedContactNum!}";
+                                        "Call ${selectedContactName!}\n${selectedContactNum!}";
                                   });
                                 } else {
                                   debugPrint("No number");
